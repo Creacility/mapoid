@@ -1,2 +1,2 @@
 # mapoid
-A project zomboid mod for sharing maps and map markers
+A mod for sharing maps and map markers in Project Zomboid

@@ -1,0 +1,33 @@
+module Mapoid {
+	imports {
+		Base
+	}
+	
+	item MapCopy {
+        DisplayCategory 	= Cartography,
+        Type				= Normal,
+        DisplayName			= Copied Map,
+        Icon				= Map,
+        Weight				= 0.1,
+        WorldStaticModel 	= Map,
+	}
+	
+	item PlayerMap {
+        DisplayCategory 	= Cartography,
+        Type				= Normal,
+        DisplayName			= Player Map,
+        Icon				= Map,
+        Weight				= 0.1,
+        WorldStaticModel = Map,	
+	}
+	
+	recipe Create Map Copy {
+		keep PlayerMap,
+		Pencil/Pen/RedPen/BluePen,
+		SheetPaper2,
+	
+		Result:MapCopy,
+		Sound:MapAddNote,
+		Time:100.0,
+	}
+}
